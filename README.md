@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Stock Tracking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Based Application
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Multi-page appplication to  track  current and historical stock prices. Search bar allows users to search stock ticker and when a certain stock is clicked on, that stock is added to watchlist. User can then click on certain stock on watchlist to find more relative information such as  high/low changes, close prices, and even a chart that tracks change over 1 day, 7 day or 1 year periods.  
 
-### `npm start`
+## Implementation 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Technologies Used: HTML, CSS, JavaScript, React, Bootstrap CSS library,  React Dev Tools Chrome Extension, React-Icons Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React Hooks: useState, useEffect, useContext, useNavigate
 
-### `npm test`
+React Implementation: BrowserRouter, Routers, Route 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Axios: Used to facilitate HTTP request (to Finnhub for stock data). Created a base URL. Then imported when sending the Axios requests.  
 
-### `npm run build`
+ApexCharts.js : Charting library to create chart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+event.stopPropagation() : Prevents event bubbling / prevents propagation of current event
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Local Storage: Allows site to populate with local storage data if user reloads the page. Saved data will be queried and user will see saved stock list on screen.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Takeaways
 
-### `npm run eject`
+By getting data through an API and filtering such data, it is possible to obtain desired data for applications. By then passing such data across the application via state and components, an application can render the data across multiple rows, titles and even graphs. By setting conditions, then certain data can be displayed wether those condition are met or not met. This makes applications complex, since it allows changes in state to cause re-rendering of components depending on such condition and the user will have different experience depending on the user's input.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
